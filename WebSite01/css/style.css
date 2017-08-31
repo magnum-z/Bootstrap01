@@ -5,3 +5,7 @@
 a.myspoilerbtn.collapsed:after {
     content: " [+]";
 }
+
+div.container {
+    border: 1px dotted black;
+}
