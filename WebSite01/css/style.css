@@ -10,6 +10,11 @@ div.container {
     border: 1px dotted black;
 }
 
+.breadcrumb > li + li:before {
+    content: "\f105";
+    font-family: "FontAwesome";
+}
+
 @media screen and (max-width: 767px) {
     .masonry[data-columns]::before {
         content: '1 .col-xs-12';
