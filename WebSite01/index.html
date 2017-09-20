@@ -651,7 +651,38 @@
             </div>
         </div>
     </div>
-    <br />        
+    <br />
+    <div class="container">
+        <h4>Lesson 21 - hints, popover</h4>
+    </div>
+    <div class="container">
+        <div class="row">                        
+            <button type="button" class="btn btn-default"
+                    data-toggle="tooltip"
+                    data-placement="bottom"
+                    title="Simply hint"
+                    data-trigger="click">
+                <i class="fa fa-hand-o-down"></i> Click me
+            </button>
+            <button type="button" class="btn btn-default"
+                    data-toggle="popover"
+                    data-placement="top"
+                    title="Caption of window"
+                    data-content="Simply text"
+                    data-trigger="hover">
+                Hover me
+            </button>
+            <button type="button" class="btn btn-default"
+                    data-toggle="popover"
+                    data-placement="right"
+                    title="Caption of window"
+                    data-content="Simply text"
+                    data-trigger="focus">
+                Focus me
+            </button>
+        </div>
+    </div>
+
     
         <br />
         <br />
@@ -668,5 +699,11 @@
         <script src="js/bootstrap.js"></script>
         <!-- Salvattore -->
         <script src="js/salvattore.js"></script>
+        <script>
+            $(function () {
+                $('[data-toggle="tooltip"').tooltip();
+                $('[data-toggle="popover"').popover();
+            });
+        </script>
 </body>
 </html>
